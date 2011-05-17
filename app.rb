@@ -10,9 +10,9 @@ get '/' do
   haml :index
 end
 
-get '/javascripts/app.js' do
- coffee :app
-end
+#get '/javascripts/app.js' do
+ #coffee :app
+#end
 
 get '/style.css' do
   scss :style
