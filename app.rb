@@ -3,19 +3,11 @@ require 'haml'
 require 'sass'
 
 configure do
-  APP_TITLE = "app"
+  APP_TITLE = "CSS3DEMO"
 end
 
 get '/' do
   haml :index
-end
-
-before do
-  
-end
-
-helpers do
-
 end
 
 get '/javascripts/app.js' do
