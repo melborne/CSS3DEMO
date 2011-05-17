@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Droid Sans'), url('http://playground.html5rocks.com/samples/html5_misc/Droid_Sans.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Molengo';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Molengo'), url('http://playground.html5rocks.com/samples/html5_misc/Molengo.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Vollkorn'), url('http://playground.html5rocks.com/samples/html5_misc/Vollkorn.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Trebuchet ms, Verdana, Myriad Web, Syntax, sans-serif
+}
+
+body {
+  color: #555;
+  background-color: #582;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  display:block;
+  height: 80px;
+  h1 {
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    color: orange;
+    font-family: 'Vollkorn';
+  }
+}
+
+p.textbox {
+  width: 96%;
+  background-color: #eed;
+  padding: 15px;
+  font: 18pt 'Verdana' sans-serif;
+  border: 2px solid orange;
+  border-radius: 18px;
+  -webkit-column-count: 1;
+  -webkit-column-rule: 1px solid orange;
+  -webkit-column-gap: 2em;
+  display: block;
+  a { text-decoration: none; }
+  a[href^="http"]:after {
+    content: url(data:image/png;base64,R0lGODlhCQAMAMQAAPr7/Cpdi6q/0X2duURxmjRlkfz9/vz8/TVlkae8z4+qwoWivTlplDVmkvv8/Up1nUVymvn6/LrL2i1gjStejKS6zkNwmUFvmD5slkJwmbjJ2DZnkqm90Cdbiv///wAAACH5BAEAAB4ALAAAAAAJAAwAAAU6oCeOY7R0aNoByWURQUoOMTpqD0p1Ird1hEGGJ/gVJB5Ip9gpcESYDqOD4BxEFcWkwTGMHACSeDwKAQA7);
+    padding-left: 2px;
+  }
+  a + a { color: #fc601b; }
+  a + a + a { color: #33c87c; }
+}
+
+p.textstroke {
+  -webkit-text-fill-color: orange;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: 1px;
+}
+
+.shadow {
+  text-shadow: rgba(64, 64, 64, 0.5) 6px 6px 4px;
+  -webkit-box-shadow: rgba(0, 0, 128, 0.5) 6px 6px 6px;
+}
+
+p.textbox {
+  -webkit-transition: 1s ease-in-out;
+}
+
+.hbox {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  position: relative;
+  margin: 0 20px 30px 0;
+  z-index: 1;
+  .button {
+    width: 100px;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    padding: 6px;
+    border-radius: 3px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+    border: 1px solid #bbb;
+    &:hover {
+      border-radius: 16px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ccc0f6), to(#cfe4fa));
+    }
+  }
+}
+
+footer {
+  margin-top: 20px;
+  #hp12c {
+    width: 100px;
+    margin: 0 auto;
+    a{
+      text-decoration: none;
+      color: orange;
+    }
+  }
+}
