@@ -62,13 +62,13 @@ $ ->
       $(this).text 'left100'
     ->
       tbox.css 'margin', '0 0 0 -200px'
-      $(this).text 'right200'
+      $(this).text 'left-200'
     ->
       tbox.css 'margin', '0 0 0 0'
       $(this).text 'Transision'
   )
 
-  navbox = $(".hbox")
+  navbox = $(".navibox")
   $("#naviposition").toggle(
     -> navbox.css {'-webkit-box-orient': 'vertical', 'position': 'absolute', 'top': '120px', 'left': '30px'}
     -> navbox.css {'-webkit-box-orient': 'horizontal', 'position': 'relative', 'top': '0px', 'left': '0px'}
