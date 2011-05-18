@@ -69,7 +69,7 @@ $ ->
   )
 
   navbox = $(".hbox")
-  $("#navibox").toggle(
+  $("#naviposition").toggle(
     -> navbox.css {'-webkit-box-orient': 'vertical', 'position': 'absolute', 'top': '120px', 'left': '30px'}
     -> navbox.css {'-webkit-box-orient': 'horizontal', 'position': 'relative', 'top': '0px', 'left': '0px'}
   )
